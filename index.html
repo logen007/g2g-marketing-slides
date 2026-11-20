@@ -807,6 +807,36 @@ html,body{width:100%;height:100%;min-height:100%;overflow:hidden;background:#101
 .slide.budget-refined .budget-summary>small{display:block;font-size:10px;line-height:1.4;color:#55575e;margin-top:12px}
 .slide.budget-refined .page-tag{left:100px;bottom:37px}
 .slide.budget-refined .page-no{right:100px;bottom:37px}
+
+/* Slide 16: six-month Gantt conclusion - eliminate footer collision */
+.slide.roadmap-refined>.kicker{top:123px;left:98px}
+.slide.roadmap-refined>.dark-heading{top:166px;left:98px;right:98px;font-size:43px;line-height:1.13;letter-spacing:-.045em}
+.slide.roadmap-refined .menu-lines{display:none}
+.slide.roadmap-refined .roadmap-context{position:absolute;left:98px;right:98px;top:289px;display:grid;grid-template-columns:1fr 1fr auto;gap:16px;align-items:center;font-size:9px;font-weight:750;letter-spacing:.035em;color:#d9d9dc}
+.slide.roadmap-refined .roadmap-context>span:nth-child(2){color:#e9c778}
+.slide.roadmap-refined .roadmap-context small{font-size:9px;font-weight:500;color:#c4c5c9;letter-spacing:0;white-space:nowrap}
+.slide.roadmap-refined .roadmap-context i{display:inline-block;width:9px;height:9px;background:#cf442c;margin-right:4px}
+.slide.roadmap-refined .roadmap-context i.idle{background:#36363a;margin-left:9px}
+.slide.roadmap-refined .gantt{top:321px;left:98px;right:98px}
+.slide.roadmap-refined .gantt-head,.slide.roadmap-refined .gantt-row{grid-template-columns:300px repeat(6,minmax(0,1fr));gap:13px}
+.slide.roadmap-refined .gantt-head{padding-bottom:8px}
+.slide.roadmap-refined .gantt-head span{font-size:10px;color:#bfc0c5}
+.slide.roadmap-refined .gantt-row{height:30px;border-bottom:1px solid #303036}
+.slide.roadmap-refined .gantt-row .roadmap-task{display:flex;align-items:baseline;gap:10px;min-width:0}
+.slide.roadmap-refined .gantt-row .roadmap-task small{font-size:8px;line-height:1;letter-spacing:.025em;color:#aaaab3;width:66px;flex:0 0 66px}
+.slide.roadmap-refined .gantt-row .roadmap-task b{font-size:11px;line-height:1.2;font-weight:600;color:#ededf0;white-space:nowrap}
+.slide.roadmap-refined .gantt-cell{height:10px;background:#343439}
+.slide.roadmap-refined .gantt-cell.on,.slide.roadmap-refined .gantt-row:nth-child(even) .gantt-cell.on{background:#cf442c}
+.slide.roadmap-refined .roadmap-milestones{position:absolute;left:98px;right:98px;top:547px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.slide.roadmap-refined .roadmap-milestones>div{display:flex;gap:12px;align-items:baseline;min-width:0}
+.slide.roadmap-refined .roadmap-milestones strong{font-size:9px;white-space:nowrap;color:#efd28f}
+.slide.roadmap-refined .roadmap-milestones span{font-size:10px;line-height:1.35;color:#dadbe0}
+.slide.roadmap-refined .timeline-foot{top:589px;bottom:auto;left:98px;right:98px;display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.slide.roadmap-refined .timeline-foot>div{border-top:1px solid #66666b;padding-top:10px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.slide.roadmap-refined .timeline-foot>div b{font-size:9px;letter-spacing:.07em;color:#efd28f}
+.slide.roadmap-refined .timeline-foot>div span{font-size:10px;line-height:1.35;color:#dddde0}
+.slide.roadmap-refined .page-tag{left:98px;bottom:28px}
+.slide.roadmap-refined .page-no{right:98px;bottom:28px}
 </style></head><body>
 <main id="viewer" aria-label="Trình chiếu kế hoạch Marketing G2G Career">
   <div class="canvas-host" id="canvasHost"><div class="canvas-frame" id="canvasFrame">
@@ -1123,7 +1153,23 @@ html,body{width:100%;height:100%;min-height:100%;overflow:hidden;background:#101
 <div class="page-tag" data-edit="f15-name">NỘI BỘ / CHIẾN LƯỢC MARKETING</div><div class="page-no">15 — 16</div>
 </article>
 
-<article class="slide editorial black" data-slide="15" data-name="SIX-MONTH ROADMAP"><div class="tiny-top"><span data-edit="h17-brand">G2G CAREER</span><span class="right"><span data-edit="h17-tag">LỘ TRÌNH 6 THÁNG</span><span data-edit="h17-date">2026 / 2027</span><span class="menu-lines">☰</span></span></div><div class="kicker" data-edit="s17-k">16 / TRIỂN KHAI 06 THÁNG</div><h2 class="dark-heading" data-edit="s17-title">Từ bản kế hoạch<br><span>đến hệ thống vận hành.</span></h2><div class="gantt"><div class="gantt-head"><span data-edit="s17-label">HẠNG MỤC</span><span data-edit="s17-m0">T1</span><span data-edit="s17-m1">T2</span><span data-edit="s17-m2">T3</span><span data-edit="s17-m3">T4</span><span data-edit="s17-m4">T5</span><span data-edit="s17-m5">T6</span></div><div class="gantt-row"><span data-edit="s17-task0">Bộ máy, quy trình, CRM</span><span class="gantt-cell on" data-cell="0-0"></span><span class="gantt-cell on" data-cell="0-1"></span><span class="gantt-cell on" data-cell="0-2"></span><span class="gantt-cell " data-cell="0-3"></span><span class="gantt-cell " data-cell="0-4"></span><span class="gantt-cell " data-cell="0-5"></span></div><div class="gantt-row"><span data-edit="s17-task1">Sản xuất nội dung</span><span class="gantt-cell on" data-cell="1-0"></span><span class="gantt-cell on" data-cell="1-1"></span><span class="gantt-cell on" data-cell="1-2"></span><span class="gantt-cell on" data-cell="1-3"></span><span class="gantt-cell on" data-cell="1-4"></span><span class="gantt-cell on" data-cell="1-5"></span></div><div class="gantt-row"><span data-edit="s17-task2">Meta Ads · Facebook/Instagram</span><span class="gantt-cell " data-cell="2-0"></span><span class="gantt-cell on" data-cell="2-1"></span><span class="gantt-cell on" data-cell="2-2"></span><span class="gantt-cell on" data-cell="2-3"></span><span class="gantt-cell on" data-cell="2-4"></span><span class="gantt-cell on" data-cell="2-5"></span></div><div class="gantt-row"><span data-edit="s17-task5">Google Search Ads · từ T4</span><span class="gantt-cell " data-cell="5-0"></span><span class="gantt-cell " data-cell="5-1"></span><span class="gantt-cell " data-cell="5-2"></span><span class="gantt-cell on" data-cell="5-3"></span><span class="gantt-cell on" data-cell="5-4"></span><span class="gantt-cell on" data-cell="5-5"></span></div><div class="gantt-row"><span data-edit="s17-task3">Đánh giá chi phí / chất lượng</span><span class="gantt-cell " data-cell="3-0"></span><span class="gantt-cell on" data-cell="3-1"></span><span class="gantt-cell on" data-cell="3-2"></span><span class="gantt-cell on" data-cell="3-3"></span><span class="gantt-cell on" data-cell="3-4"></span><span class="gantt-cell on" data-cell="3-5"></span></div><div class="gantt-row"><span data-edit="s17-task4">Tối ưu và mở rộng</span><span class="gantt-cell " data-cell="4-0"></span><span class="gantt-cell " data-cell="4-1"></span><span class="gantt-cell " data-cell="4-2"></span><span class="gantt-cell on" data-cell="4-3"></span><span class="gantt-cell on" data-cell="4-4"></span><span class="gantt-cell on" data-cell="4-5"></span></div></div><div class="timeline-foot"><div data-edit="s17-note1">DỰ KIẾN: Meta Ads từ T2, Google Search Ads từ T4; ngân sách Ads T2–T4 lần lượt 20 – 30 – 40 triệu. Nội dung 10–14 bài/tuần, 70% video.</div><div data-edit="s17-note2">CHẠY LIÊN TỤC: Meta từ T2 và Google từ T4, không dừng tại T4. CẦN XÂY DỰNG: ngân sách Ads T5–T6, tỷ lệ Meta/Google, lương và KPI.</div></div><div class="page-tag" data-edit="f17-name">NỘI BỘ / CHIẾN LƯỢC MARKETING</div><div class="page-no">16 — 16</div></article>
+<article class="slide editorial black roadmap-refined" data-slide="15" data-name="SIX-MONTH ROADMAP">
+<div class="tiny-top"><span data-edit="h17-brand">G2G CAREER</span><span class="right"><span data-edit="h17-tag">LỘ TRÌNH 6 THÁNG</span><span data-edit="h17-date">2026 / 2027</span><span class="menu-lines">☰</span></span></div>
+<div class="kicker" data-edit="s17-k">16 / TRIỂN KHAI 06 THÁNG</div>
+<h2 class="dark-heading" data-edit="s17-title">Từ kế hoạch đến hệ thống<br><span>vận hành trong sáu tháng.</span></h2>
+<div class="roadmap-context"><span>GIAI ĐOẠN 1 · T1–T3 / XÂY NỀN &amp; KIỂM CHỨNG</span><span>GIAI ĐOẠN 2 · T4–T6 / TỐI ƯU &amp; MỞ RỘNG</span><small><i></i> Tháng triển khai <i class="idle"></i> Chưa triển khai</small></div>
+<div class="gantt">
+<div class="gantt-head"><span data-edit="s17-label">HẠNG MỤC / NHÓM CÔNG VIỆC</span><span data-edit="s17-m0">T1</span><span data-edit="s17-m1">T2</span><span data-edit="s17-m2">T3</span><span data-edit="s17-m3">T4</span><span data-edit="s17-m4">T5</span><span data-edit="s17-m5">T6</span></div>
+<div class="gantt-row"><span class="roadmap-task"><small>NỀN TẢNG</small><b data-edit="s17-task0">Bộ máy, quy trình, CRM</b></span><span class="gantt-cell on" data-cell="0-0"></span><span class="gantt-cell on" data-cell="0-1"></span><span class="gantt-cell on" data-cell="0-2"></span><span class="gantt-cell" data-cell="0-3"></span><span class="gantt-cell" data-cell="0-4"></span><span class="gantt-cell" data-cell="0-5"></span></div>
+<div class="gantt-row"><span class="roadmap-task"><small>NỘI DUNG</small><b data-edit="s17-task1">Sản xuất nội dung</b></span><span class="gantt-cell on" data-cell="1-0"></span><span class="gantt-cell on" data-cell="1-1"></span><span class="gantt-cell on" data-cell="1-2"></span><span class="gantt-cell on" data-cell="1-3"></span><span class="gantt-cell on" data-cell="1-4"></span><span class="gantt-cell on" data-cell="1-5"></span></div>
+<div class="gantt-row"><span class="roadmap-task"><small>QUẢNG CÁO</small><b data-edit="s17-task2">Meta Ads (từ T2)</b></span><span class="gantt-cell" data-cell="2-0"></span><span class="gantt-cell on" data-cell="2-1"></span><span class="gantt-cell on" data-cell="2-2"></span><span class="gantt-cell on" data-cell="2-3"></span><span class="gantt-cell on" data-cell="2-4"></span><span class="gantt-cell on" data-cell="2-5"></span></div>
+<div class="gantt-row"><span class="roadmap-task"><small>QUẢNG CÁO</small><b data-edit="s17-task5">Google Search Ads (từ T4)</b></span><span class="gantt-cell" data-cell="5-0"></span><span class="gantt-cell" data-cell="5-1"></span><span class="gantt-cell" data-cell="5-2"></span><span class="gantt-cell on" data-cell="5-3"></span><span class="gantt-cell on" data-cell="5-4"></span><span class="gantt-cell on" data-cell="5-5"></span></div>
+<div class="gantt-row"><span class="roadmap-task"><small>ĐO LƯỜNG</small><b data-edit="s17-task3">Đánh giá CPL & chất lượng lead</b></span><span class="gantt-cell" data-cell="3-0"></span><span class="gantt-cell on" data-cell="3-1"></span><span class="gantt-cell on" data-cell="3-2"></span><span class="gantt-cell on" data-cell="3-3"></span><span class="gantt-cell on" data-cell="3-4"></span><span class="gantt-cell on" data-cell="3-5"></span></div>
+<div class="gantt-row"><span class="roadmap-task"><small>ĐO LƯỜNG</small><b data-edit="s17-task4">Tối ưu và mở rộng</b></span><span class="gantt-cell" data-cell="4-0"></span><span class="gantt-cell" data-cell="4-1"></span><span class="gantt-cell" data-cell="4-2"></span><span class="gantt-cell on" data-cell="4-3"></span><span class="gantt-cell on" data-cell="4-4"></span><span class="gantt-cell on" data-cell="4-5"></span></div>
+</div>
+<div class="roadmap-milestones"><div><strong>CUỐI T3 · ĐÁNH GIÁ</strong><span>Rà soát CRM, CPL và tỷ lệ lead đủ điều kiện trước khi mở rộng.</span></div><div><strong>CUỐI T6 · TỔNG KẾT</strong><span>Đánh giá kết quả 6 tháng và xây dựng chu kỳ tối ưu tiếp theo.</span></div></div>
+<div class="timeline-foot"><div data-edit="s17-note1"><b>CƠ SỞ DỰ THẢO</b><span>Meta Ads từ T2; Google Search Ads từ T4. Ngân sách đề xuất T2–T4: 20 · 30 · 40 triệu VNĐ.</span></div><div data-edit="s17-note2"><b>CẦN HOÀN THIỆN</b><span>Ngân sách T5–T6 · Tỷ lệ Meta/Google · Lương Marketing · Bộ KPI. Thời điểm phê duyệt sẽ xác định sau khi có kết quả đánh giá.</span></div></div>
+<div class="page-tag" data-edit="f17-name">NỘI BỘ / CHIẾN LƯỢC MARKETING</div><div class="page-no">16 — 16</div></article>
   </div></div>
 </main>
 <button id="prevSlide" class="viewer-control prev" aria-label="Trang trước" type="button">‹</button>
