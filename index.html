@@ -128,29 +128,32 @@ html,body{width:100%;height:100%;min-height:100%;overflow:hidden;background:#101
 .slide.editorial[data-slide="15"] .kpi-col .kpi-item{min-height:48px}
 .slide.editorial[data-slide="15"] .kpi-col p{color:#686970;line-height:1.45}
 
-/* Slide 04: 20 Nov 2026 deduplicated competitor evidence */
-.slide.spy4 .headline-wide{top:130px;left:82px;right:80px}
-.slide.spy4 .headline-wide .kicker{margin-bottom:17px}
-.slide.spy4 .headline-wide .mid-heading{font-size:44px;line-height:1.1;letter-spacing:-.061em;white-space:nowrap}
-.slide.spy4 .spy4-tableblock{position:absolute;top:301px;left:82px;right:79px}
+/* Slide 04: flow layout prevents table, metrics and source from overlapping */
+.slide.spy4 .headline-wide{top:119px;left:82px;right:79px}
+.slide.spy4 .headline-wide .kicker{margin-bottom:13px}
+.slide.spy4 .headline-wide .mid-heading{font-size:38px;line-height:1.06;letter-spacing:-.055em;white-space:normal;max-width:1120px}
+.slide.spy4 .spy4-flow{position:absolute;top:251px;bottom:83px;left:82px;right:79px;display:flex;flex-direction:column;gap:9px}
+.slide.spy4 .spy4-metrics{position:static;display:grid;grid-template-columns:1fr 1fr;gap:18px;border-top:1px solid #161616;border-bottom:1px solid #dadade;padding:8px 0;flex:0 0 auto}
+.slide.spy4 .spy4-metrics>div{display:flex;align-items:center;gap:12px;min-width:0}
+.slide.spy4 .spy4-metrics strong{font-size:27px;line-height:1;font-weight:680;letter-spacing:-.06em;color:var(--red);white-space:nowrap}
+.slide.spy4 .spy4-metrics span{font-size:12px;line-height:1.27;color:#414248}
+.slide.spy4 .spy4-tableblock{position:static;flex:0 0 auto}
 .slide.spy4 .spy4-table{width:100%;table-layout:fixed;border-collapse:collapse}
-.slide.spy4 .spy4-table th{border-top:2px solid #171717;border-bottom:1px solid #a8a8ae;padding:11px 10px 10px 0;text-align:left;font-size:10px;font-weight:800;color:#51535a;letter-spacing:.055em;vertical-align:bottom}
-.slide.spy4 .spy4-table th small{font-size:9px;color:#777;display:block;letter-spacing:0;margin-top:4px}
-.slide.spy4 .spy4-table th:nth-child(1),.slide.spy4 .spy4-table td:nth-child(1){width:17%}
-.slide.spy4 .spy4-table th:nth-child(2),.slide.spy4 .spy4-table td:nth-child(2){width:27%}
+.slide.spy4 .spy4-table th{border-bottom:2px solid #161616;padding:5px 10px 8px 0;text-align:left;font-size:10px;font-weight:800;color:#4e5056;letter-spacing:.035em;vertical-align:bottom}
+.slide.spy4 .spy4-table th:nth-child(1),.slide.spy4 .spy4-table td:nth-child(1){width:24%}
+.slide.spy4 .spy4-table th:nth-child(2),.slide.spy4 .spy4-table td:nth-child(2){width:23%}
 .slide.spy4 .spy4-table th:nth-child(3),.slide.spy4 .spy4-table td:nth-child(3){width:28%}
-.slide.spy4 .spy4-table th:nth-child(4),.slide.spy4 .spy4-table td:nth-child(4){width:28%}
-.slide.spy4 .spy4-table td{padding:10px 14px 10px 0;border-bottom:1px solid #d6d7db;vertical-align:middle;font-size:12.6px;line-height:1.29;letter-spacing:-.012em;color:#292a2f}
-.slide.spy4 .spy4-table td:first-child strong{display:block;font-size:15px;color:#101013;letter-spacing:-.024em}
-.slide.spy4 .spy4-table td:first-child small{display:block;margin-top:5px;color:#6b6d75;font-size:10px}
+.slide.spy4 .spy4-table th:nth-child(4),.slide.spy4 .spy4-table td:nth-child(4){width:25%}
+.slide.spy4 .spy4-table td{padding:7px 13px 7px 0;border-bottom:1px solid #d7d8da;vertical-align:middle;font-size:11.7px;line-height:1.24;letter-spacing:-.008em;color:#292a2f;overflow-wrap:break-word}
 .slide.spy4 .spy4-table tbody tr:last-child td{border-bottom:2px solid #151515}
-.slide.spy4 .spy4-metrics{position:absolute;top:604px;left:82px;right:80px;display:flex;gap:55px;align-items:flex-end}
-.slide.spy4 .spy4-metrics>div{display:flex;align-items:baseline;gap:13px;min-width:0}
-.slide.spy4 .spy4-metrics strong{font-size:32px;line-height:1;font-weight:680;letter-spacing:-.07em;color:var(--red);white-space:nowrap}
-.slide.spy4 .spy4-metrics span{font-size:12px;color:#414248;line-height:1.3}
-.slide.spy4 .spy4-source{position:absolute;left:82px;right:79px;bottom:71px;margin:0;font-size:10.3px;line-height:1.37;color:#65676c;letter-spacing:0}
+.slide.spy4 .spy4-entity{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px}
+.slide.spy4 .spy4-entity strong{font-size:13px;font-weight:750;line-height:1.18;color:#111;letter-spacing:-.02em}
+.slide.spy4 .spy4-entity small{font-size:9.5px;color:#65676e;line-height:1.18;white-space:nowrap}
+.slide.spy4 .spy4-caveat{display:block;font-size:9.5px;line-height:1.22;color:#9e2424;margin-top:3px}
+.slide.spy4 .spy4-source{position:static;flex:0 0 auto;margin:0;font-size:10.1px;line-height:1.38;color:#67686f;letter-spacing:0}
 .slide.spy4 .page-tag{left:82px;bottom:38px}
 .slide.spy4 .page-no{right:79px;bottom:38px}
+
 </style></head><body>
 <main id="viewer" aria-label="Trình chiếu kế hoạch Marketing G2G Career">
   <div class="canvas-host" id="canvasHost"><div class="canvas-frame" id="canvasFrame">
@@ -177,7 +180,7 @@ html,body{width:100%;height:100%;min-height:100%;overflow:hidden;background:#101
 <div><b data-edit="s2-a4">04</b><div class="funnel-text"><span data-edit="s2-t4">Khách đã tư vấn và được đánh giá hồ sơ</span><small class="funnel-owner">Sales</small></div></div>
 <div class="funnel-primary"><b data-edit="s2-a5">05</b><div class="funnel-text"><span data-edit="s2-t5">Khách ký hợp đồng</span><small class="funnel-owner">Sales</small></div></div></div><div class="source-split"><div><span data-edit="s2-src1">NGUỒN A</span><strong data-edit="s2-src1b">Marketing của G2G</strong></div><div><span data-edit="s2-src2">NGUỒN B</span><strong data-edit="s2-src2b">Đối tác giới thiệu</strong></div></div><p class="source-note" data-edit="s2-note">Cả hai nguồn cùng đi qua 5 mốc và được báo cáo riêng. Marketing bàn giao ở mốc 03; Sales phụ trách tư vấn, đánh giá hồ sơ và ký hợp đồng.</p></div><div class="page-tag" data-edit="f2-name">NỘI BỘ / CHIẾN LƯỢC MARKETING</div><div class="page-no">02 — 17</div></article>
 <article class="slide dark" data-name="Spy • chủ đề" data-slide="2">
-<div class="tiny-top"><span data-edit="data-brand">G2G CAREER</span><span class="right"><span data-edit="data-meta">PHÂN TÍCH THỊ TRƯỜNG</span><span data-edit="data-date">18 / 11 / 2026</span><span>☰</span></span></div>
+<div class="tiny-top"><span data-edit="data-brand">G2G CAREER</span><span class="right"><span data-edit="data-meta">PHÂN TÍCH THỊ TRƯỜNG</span><span data-edit="data-date">20 / 11 / 2026</span><span>☰</span></span></div>
 <div class="statement"><div class="ui-kicker" data-edit="data-kicker" style="color:var(--gold);margin-bottom:22px">03 / DỮ LIỆU ĐỐI THỦ</div><h2 class="headline" data-edit="data-title">TikTok thiên về<br/>tiếng Đức ứng dụng.<br/>Facebook thiên về<br/>học viên và giảng dạy.</h2><p class="story" data-edit="data-desc">Cùng một chủ đề, tỷ trọng giữa hai nền tảng chênh nhau từ 1,7 đến 2,9 lần.</p></div>
 <div class="note-tile" data-edit="data-takeaway"><strong>ĐỊNH HƯỚNG CHO G2G</strong><b>Giai đoạn tiền khai giảng:</b> video tiếng Đức ứng dụng và hành trình chuẩn bị giảng dạy.<br/><b>Khi có lớp đầu tiên:</b> bổ sung hành trình học viên.</div>
 <div class="chart-shell"><div class="chart-cap"><span data-edit="data-chart-caption">TỶ TRỌNG BÀI ĐĂNG CỦA ĐỐI THỦ THEO CHỦ ĐỀ (% TRÊN TỔNG BÀI MỖI NỀN TẢNG)</span><span class="chart-scale">THANG 0–40%</span></div>
@@ -185,15 +188,23 @@ html,body{width:100%;height:100%;min-height:100%;overflow:hidden;background:#101
 <div class="bar-group"><div class="bar-label"><span data-edit="topic-b">Hành trình học viên</span></div><div class="barrow"><span class="s-label">Facebook</span><div class="bartrack"><div class="barfill fb" data-bar="p-b-fb" style="width:72.50%"></div></div><span class="stats"><span class="percent" data-edit="p-b-fb" data-chartnum="1">29%</span><span class="count" data-edit="n-b-fb">(1.695 bài)</span></span></div><div class="barrow"><span class="s-label">TikTok</span><div class="bartrack"><div class="barfill tt" data-bar="p-b-tt" style="width:42.50%"></div></div><span class="stats"><span class="percent" data-edit="p-b-tt" data-chartnum="1">17%</span><span class="count" data-edit="n-b-tt">(572 bài)</span></span></div></div>
 <div class="bar-group"><div class="bar-label"><span data-edit="topic-c">Hoạt động giảng dạy</span></div><div class="barrow"><span class="s-label">Facebook</span><div class="bartrack"><div class="barfill fb" data-bar="p-c-fb" style="width:57.50%"></div></div><span class="stats"><span class="percent" data-edit="p-c-fb" data-chartnum="1">23%</span><span class="count" data-edit="n-c-fb">(1.330 bài)</span></span></div><div class="barrow"><span class="s-label">TikTok</span><div class="bartrack"><div class="barfill tt" data-bar="p-c-tt" style="width:20.00%"></div></div><span class="stats"><span class="percent" data-edit="p-c-tt" data-chartnum="1">8%</span><span class="count" data-edit="n-c-tt">(262 bài)</span></span></div></div>
 </div>
-<div class="chart-bottom" data-edit="data-source">Nguồn: G2G Spy Dataset · dữ liệu chốt ngày 18/11/2026 · 5.895 bài Facebook, 3.377 bài TikTok · Đối thủ: CMMB, BLA, GermanLab, AVT, Eduwing Global. Mẫu thu thập, không đại diện toàn thị trường. Chỉ hiển thị 3 chủ đề; các chủ đề có thể chồng nhau.</div>
+<div class="chart-bottom" data-edit="data-source">Nguồn: G2G Spy Dataset · dữ liệu đối chiếu ngày 20/11/2026 · 5.895 bài Facebook, 3.377 bài TikTok · Đối thủ: CMMB, BLA, GermanLab, AVT, Eduwing Global. Mẫu thu thập, không đại diện toàn thị trường. Chỉ hiển thị 3 chủ đề; các chủ đề có thể chồng nhau.</div>
 <div class="page-tag" data-edit="data-page-tag">NGHIÊN CỨU THỊ TRƯỜNG / G2G</div><div class="page-no">03 — 17</div>
 </article>
-<article class="slide editorial light spy4" data-slide="3" data-name="COMPETITIVE BENCHMARK"><div class="tiny-top"><span data-edit="h4-brand">G2G CAREER</span><span class="right"><span data-edit="h4-tag">ĐỐI THỦ / SPY 20.11</span><span data-edit="h4-date">2026 / 2027</span><span class="menu-lines">☰</span></span></div>
-<div class="headline-wide"><div class="kicker" data-edit="s4-k">04 / PHÂN TÍCH ĐỐI THỦ</div><h2 class="mid-heading" data-edit="s4-title">Đối thủ ưu tiên khóa tiếng Đức và ưu đãi.<br><em>Chi phí, visa ít được nói tới.</em></h2></div>
-<div class="spy4-tableblock"><table class="spy4-table"><thead><tr><th>ĐỐI THỦ <small>ADS / NHÓM</small></th><th>THÔNG ĐIỆP CHÍNH</th><th>DẪN CHỨNG / TUYÊN BỐ TRONG ADS</th><th>G2G LÀM KHÁC</th></tr></thead><tbody><tr><td><strong data-edit="s4-r0c0">CMMB</strong><small>53 / 25 Ads / nhóm</small></td><td data-edit="s4-r0c1">Khóa tiếng Đức, ưu đãi; việc làm §18b / tuyển thợ</td><td data-edit="s4-r0c2">19 Ads tiếng Đức; 9 ID cùng 1 câu chuyện học viên</td><td data-edit="s4-r0c3">Giải đáp rõ chi phí, điều kiện; không hứa kết quả</td></tr><tr><td><strong data-edit="s4-r1c0">BLA</strong><small>7 / 5 Ads / nhóm</small></td><td data-edit="s4-r1c1">Học tiếng Đức online; tư vấn du học</td><td data-edit="s4-r1c2">GV người Đức, sĩ số nhỏ; 2 Ads mang nhãn chi phí</td><td data-edit="s4-r1c3">Nêu rõ cách học, chi phí và bằng chứng thực tế</td></tr><tr><td><strong data-edit="s4-r2c0">GermanLab</strong><small>18 / 16 Ads / nhóm</small></td><td data-edit="s4-r2c1">Khai giảng A1/B2; ưu đãi khóa học</td><td data-edit="s4-r2c2">13/18 Ads hướng tới lớp học; 12/18 có link form</td><td data-edit="s4-r2c3">Giáo viên thật; video thực hành, không hứa suông</td></tr><tr><td><strong data-edit="s4-r3c0">AVT</strong><small>1 / 1 Ads / nhóm</small></td><td data-edit="s4-r3c1">Lộ trình A1 → học tiếng → du học nghề</td><td data-edit="s4-r3c2">Nêu 8–9 tháng và 12–14 €/giờ trong quảng cáo</td><td data-edit="s4-r3c3">Chỉ 1 mẫu; chưa đủ kết luận. Làm rõ điều kiện</td></tr><tr><td><strong data-edit="s4-r4c0">Eduwing Global</strong><small>7 / 6 Ads / nhóm</small></td><td data-edit="s4-r4c1">Suất nghề 2027; việc làm theo diện §18b</td><td data-edit="s4-r4c2">Nêu 54 suất, thành phố, 1.100–1.490 €/tháng</td><td data-edit="s4-r4c3">Sàng lọc theo ngành và trình độ tiếng Đức</td></tr></tbody></table></div>
-<div class="spy4-metrics"><div><strong data-edit="s4-metric1">37 / 86</strong><span>Ads (43%) về khóa tiếng Đức</span></div><div><strong data-edit="s4-metric2">3 / 86</strong><span>Ads lấy chi phí hoặc visa làm chủ đề chính</span></div></div>
-<p class="spy4-source" data-edit="s4-source">Nguồn: G2G Spy Dataset, chốt ngày 20/11/2026 · 86 Ad ID / 53 nhóm caption của 5 đối thủ trên Facebook Ads Library. Phân loại nội dung theo rà soát; tuyên bố của đối thủ chưa kiểm chứng. Không có dữ liệu chi phí, lượt xem hay chuyển đổi.</p>
-<div class="page-tag" data-edit="f4-name">NỘI BỘ / CHIẾN LƯỢC MARKETING</div><div class="page-no">04 — 17</div></article>
+<article class="slide editorial light spy4" data-slide="3" data-name="COMPETITIVE BENCHMARK">
+<div class="tiny-top"><span data-edit="h4-brand">G2G CAREER</span><span class="right"><span data-edit="h4-tag">ĐỐI THỦ / SPY 20.11</span><span data-edit="h4-date">2026 / 2027</span><span class="menu-lines">☰</span></span></div>
+<div class="headline-wide"><div class="kicker" data-edit="s4-k">04 / PHÂN TÍCH ĐỐI THỦ</div><h2 class="mid-heading" data-edit="s4-title">Đối thủ chủ yếu quảng cáo khóa tiếng Đức và ưu đãi.<br><em>Chi phí và visa hiếm khi là chủ đề chính.</em></h2></div>
+<div class="spy4-flow">
+  <div class="spy4-metrics"><div><strong data-edit="s4-metric1">37/86</strong><span>quảng cáo (43%) về khóa tiếng Đức</span></div><div><strong data-edit="s4-metric2">3/86</strong><span>quảng cáo lấy chi phí hoặc visa làm chủ đề chính</span></div></div>
+  <div class="spy4-tableblock"><table class="spy4-table"><thead><tr><th>ĐỐI THỦ</th><th>THÔNG ĐIỆP CHÍNH</th><th>QUAN SÁT TỪ QUẢNG CÁO</th><th>ĐỊNH HƯỚNG CHO G2G</th></tr></thead><tbody><tr><td><div class="spy4-entity"><strong data-edit="s4-r0c0">CMMB</strong><small>53 quảng cáo · 25 mẫu</small></div></td><td data-edit="s4-r0c1">Khóa tiếng Đức, ưu đãi; việc làm, tuyển thợ</td><td data-edit="s4-r0c2">19 quảng cáo khóa tiếng Đức; 1 câu chuyện học viên lặp 9 lần</td><td data-edit="s4-r0c3">Giải đáp chi phí và điều kiện; không hứa kết quả</td></tr>
+<tr><td><div class="spy4-entity"><strong data-edit="s4-r1c0">GermanLab</strong><small>18 quảng cáo · 16 mẫu</small></div></td><td data-edit="s4-r1c1">Khai giảng A1/B2; ưu đãi khóa học</td><td data-edit="s4-r1c2">13/18 hướng tới lớp học; 12/18 có link Google Form</td><td data-edit="s4-r1c3">Video thực hành cùng giáo viên G2G; đăng ký tư vấn qua form</td></tr>
+<tr><td><div class="spy4-entity"><strong data-edit="s4-r2c0">BLA</strong><small>7 quảng cáo · 5 mẫu</small></div></td><td data-edit="s4-r2c1">Học tiếng Đức online; chi phí du học</td><td data-edit="s4-r2c2">Giáo viên người Đức, sĩ số ít; 2 quảng cáo về chi phí</td><td data-edit="s4-r2c3">Giải thích cách học và chi phí; chỉ dùng bằng chứng khi có dữ liệu và quyền sử dụng</td></tr>
+<tr><td><div class="spy4-entity"><strong data-edit="s4-r3c0">Eduwing Global</strong><small>7 quảng cáo · 6 mẫu</small></div></td><td data-edit="s4-r3c1">Suất du học nghề 2027; việc làm diện §18b</td><td data-edit="s4-r3c2">1 quảng cáo liệt kê 54 suất; có thành phố, lương học nghề 1.100–1.490 €/tháng</td><td data-edit="s4-r3c3">Lọc khách theo ngành và trình độ tiếng Đức ngay trong lời kêu gọi</td></tr>
+<tr><td><div class="spy4-entity"><strong data-edit="s4-r4c0">AVT</strong><small>1 quảng cáo · 1 mẫu</small></div><span class="spy4-caveat">Chỉ 1 mẫu, chưa đủ kết luận</span></td><td data-edit="s4-r4c1">Học tiếng Đức rồi chuyển sang du học nghề</td><td data-edit="s4-r4c2">Nêu 8–9 tháng; làm thêm 12–14 €/giờ</td><td data-edit="s4-r4c3">Nêu điều kiện của từng lộ trình</td></tr></tbody></table></div>
+  <p class="spy4-source" data-edit="s4-source">Nguồn: G2G Spy, 20/11/2026, Facebook Ads Library; 86 quảng cáo (53 mẫu) của 5 đối thủ, đã loại 4 quảng cáo ngoài ngành. 54/86 bắt đầu chạy trong tháng 11. Nhóm nội dung do G2G phân loại; tuyên bố chưa kiểm chứng. Không có dữ liệu chi phí, lượt xem hay chuyển đổi.</p>
+</div>
+<div class="page-tag" data-edit="f4-name">NỘI BỘ / CHIẾN LƯỢC MARKETING</div><div class="page-no">04 — 17</div>
+</article>
 <article class="slide org" data-slide="4" data-name="Sơ đồ tổ chức">
 <div class="tiny-top"><span data-edit="org-brand">G2G CAREER</span><span class="right"><span data-edit="org-meta">TỔ CHỨC</span><span data-edit="org-date">BỘ MÁY MARKETING</span><span>☰</span></span></div>
 <div class="left-rail"><div class="overline" data-edit="org-kicker">05 / TỔ CHỨC NHÂN SỰ</div><h2 class="org-head" data-edit="org-title">Bộ máy gọn.<br>Trách nhiệm rõ.</h2><p class="intro" data-edit="org-intro">Ba vị trí chuyên trách. Sales và giáo viên phối hợp theo từng nội dung, không thuộc biên chế Marketing.</p><div class="side-rule"></div><div class="serifmark" data-edit="org-serif">3 vị trí<br>chuyên trách.</div></div>
